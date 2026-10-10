@@ -13,7 +13,7 @@
   // Palate lives in a claude.ai artifact, whose home-screen icon belongs to claude.ai.
   // This page exists only to carry Palate's own icon: opened plainly it forwards to the artifact;
   // opened with ?add it stays put so Safari can add it, after dropping ?add so the saved icon opens plain.
-  var PALATE = "https://claude.ai/artifact/MNjpTG9r2rDRFJZeaxJ96M";
+  var PALATE = "https://claude.ai/artifact/MNjpTG9r2rDRFJZeaxJ96M#no_universal_links";
   if (!/[?&]add\b/.test(location.search)) location.replace(PALATE);
   else history.replaceState(null, "", location.pathname);
 </script>
@@ -35,7 +35,7 @@
     <h1>Palate</h1>
     <p>Tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
     <p>On a Mac: <b>File → Add to Dock</b>.</p>
-    <a href="https://claude.ai/artifact/MNjpTG9r2rDRFJZeaxJ96M">Open Palate</a>
+    <a href="https://claude.ai/artifact/MNjpTG9r2rDRFJZeaxJ96M#no_universal_links">Open Palate</a>
   </main>
 </body>
 </html>
