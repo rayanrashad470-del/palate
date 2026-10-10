@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Palate</title>
+<meta name="apple-mobile-web-app-title" content="Palate">
+<meta name="theme-color" content="#000000">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="manifest" href="manifest.webmanifest">
+<script>
+  // Palate lives in a claude.ai artifact, whose home-screen icon belongs to claude.ai.
+  // This page exists only to carry Palate's own icon: opened plainly it forwards to the artifact;
+  // opened with ?add it stays put so Safari can add it, after dropping ?add so the saved icon opens plain.
+  var PALATE = "https://claude.ai/artifact/MNjpTG9r2rDRFJZeaxJ96M";
+  if (!/[?&]add\b/.test(location.search)) location.replace(PALATE);
+  else history.replaceState(null, "", location.pathname);
+</script>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; min-height: 100vh; background: #000; color: #f5f5f5; font: 17px/1.45 -apple-system, system-ui, sans-serif;
+         display: grid; place-items: center; text-align: center; padding: 24px 16px; box-sizing: border-box; }
+  img { width: 112px; height: 112px; border-radius: 25px; }
+  h1 { font-size: 28px; margin: 20px 0 8px; font-weight: 600; }
+  p { color: #a3a3a3; margin: 0 0 8px; max-width: 320px; }
+  b { color: #f5f5f5; font-weight: 600; }
+  a { display: inline-block; margin-top: 20px; padding: 12px 22px; border-radius: 12px; background: #f5f5f5; color: #000;
+      text-decoration: none; font-weight: 600; }
+</style>
+</head>
+<body>
+  <main>
+    <img src="icon-512.png" alt="">
+    <h1>Palate</h1>
+    <p>Tap <b>Share</b>, then <b>Add to Home Screen</b>.</p>
+    <p>On a Mac: <b>File → Add to Dock</b>.</p>
+    <a href="https://claude.ai/artifact/MNjpTG9r2rDRFJZeaxJ96M">Open Palate</a>
+  </main>
+</body>
+</html>
